@@ -1,0 +1,15 @@
+- [x] Update FRONTEND/HSBA_FRONTENDAPI/src/serviceprovider/AddService.jsx to change 'serviceProviderId' to 'serviceProvider_id' in the serviceData object
+- [x] Update FRONTEND/HSBA_FRONTENDAPI/src/serviceprovider/ViewServicesByServiceProvider.jsx to correct the API URL from 'viewservicesbyserviceprovider' to 'viewservicesbyprovider'
+- [x] Update table fields in ViewServicesByServiceProvider.jsx: service.name to service.serviceName, service.cost to service.servicePrice, service.serviceProviderId to service.serviceProvider.id
+- [x] Update FRONTEND/HSBA_FRONTENDAPI/src/customer/BookService.jsx to use serviceStartDate and serviceEndDate instead of bookingDate, add end date input, and replace alerts with toast notifications
+- [x] Update FRONTEND/HSBA_FRONTENDAPI/src/customer/BookedServices.jsx to display serviceStartDate and serviceEndDate instead of bookingDate
+- [x] Change backend updateBookingStatus from @GetMapping to @PostMapping and frontend to use axios.post
+- [x] Update FRONTEND/HSBA_FRONTENDAPI/src/serviceprovider/ViewBookings.jsx to display serviceStartDate and serviceEndDate instead of bookingDate
+- [x] Replace alerts with toast notifications in ViewBookings.jsx
+- [x] Add @Modifying annotation to updateStatusById query in ServiceBookingRepository
+- [x] Add @Transactional annotation to updateBookingStatus method in ServiceProviderServiceImpl
+- [x] Add @Transactional to deletecustomer and deleteserviceprovider methods in AdminServiceImpl
+- [x] Add deleteByCustomerId and deleteByServiceProviderId methods to ServiceBookingRepository
+- [x] Add deleteByServiceProviderId method to HomeServiceRepository
+- [x] Update deletecustomer to delete related bookings first
+- [x] Update deleteserviceprovider to delete related bookings and services first
